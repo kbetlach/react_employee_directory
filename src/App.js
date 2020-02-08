@@ -1,9 +1,8 @@
 import React from "react";
-import Employees from "./components/Employee.js";
-import EmployeeList from "./data/employees.json";
+import EmployeeContainer from "./components/EmployeeContainer.js";
 
 function App() {
-    return <Employees employeeList={EmployeeList} />
+    return <EmployeeContainer.js />
 }
 
 export default App;

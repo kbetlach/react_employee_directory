@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Employee.css";
+import "../styles/style.css";
 
 function Employees(props) {
   //Condition if statement and Map function to loop through array
@@ -9,7 +9,6 @@ function Employees(props) {
       {props.employeeList.length ? (
         <ul className="list-group">
           <h2 className="text-center">Employee Directory</h2>
-
           {props.employeeList.map(result => (
             <li className="list-group-item" key={result.id}>
               <b>{result.firstName}</b> <b>{result.lastName}</b> || <b>Email:</b> {result.email} || <b>Date of Birth:</b> {result.birthDate}
