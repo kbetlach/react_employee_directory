@@ -4,16 +4,16 @@ import EmployeeList from "../data/employees.json";
 function EmployeeInfo(props) {
   console.log(props)
 
-  const results = EmployeeList.filter(employee => employee.firstName.toLowerCase().includes(props.search.toLowerCase()));
+  const resultsFirstName = EmployeeList.filter(employee => employee.firstName.toLowerCase().includes(props.search.toLowerCase()));
 
   return (
     <div className="text-center">
-      {results.length > 0 ? (
+      {resultsFirstName.length > 0 ? (
         <ul className="list-group">
           <h2>Searched Employees</h2>
-          {results.map(result => (
+          {resultsFirstName.map(result => (
             <li className="list-group-item" key={result.id}>
-              <b>{result.year}</b> {result.make} {result.model}
+              <b>{result.firstName}</b> <b>{result.lastName}</b> || {result.email} || {result.phone} || {result.birthDate}
             </li>
           ))}
         </ul >

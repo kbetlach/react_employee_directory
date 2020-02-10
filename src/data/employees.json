@@ -5,7 +5,7 @@
 		"lastName": "Kolander",
 		"email": "andrew@company.com",
 		"phone": "555-000-1111",
-		"birthDate": "05-22-1989"
+		"birthDate": "May 22, 1989"
 	},
 	{
 		"id": 2,
@@ -13,7 +13,7 @@
 		"lastName": "Bliskowski",
 		"email": "ashley@company.com",
 		"phone": "555-000-2222",
-		"birthDate": "02-27-1989"
+		"birthDate": "February 27, 1989"
 	},
 	{
 		"id": 3,
@@ -21,7 +21,7 @@
 		"lastName": "Hannasch",
 		"email": "john@company.com",
 		"phone": "555-000-3333",
-		"birthDate": "04-04-1991"
+		"birthDate": "April 4, 1991"
 	},
 	{
 		"id": 4,
@@ -29,7 +29,7 @@
 		"lastName": "Forseth",
 		"email": "lukas@company.com",
 		"phone": "555-000-4444",
-		"birthDate": "09-19-1988"
+		"birthDate": "September 9, 1988"
     },
     {
 		"id": 5,
@@ -37,7 +37,7 @@
 		"lastName": "Boydston",
 		"email": "cameron@company.com",
 		"phone": "555-000-5555",
-		"birthDate": "11-11-1987"
+		"birthDate": "November 11, 1987"
     },
     {
 		"id": 6,
@@ -45,7 +45,7 @@
 		"lastName": "Kell",
 		"email": "joe@company.com",
 		"phone": "555-000-6666",
-		"birthDate": "07-12-1994"
+		"birthDate": "July 12, 1994"
     },
     {
 		"id": 7,
@@ -53,7 +53,7 @@
 		"lastName": "Marshall",
 		"email": "dan@company.com",
 		"phone": "555-000-7777",
-		"birthDate": "05-03-1989"
+		"birthDate": "May 3, 1989"
     },
     {
 		"id": 8,
@@ -61,7 +61,7 @@
 		"lastName": "Franke",
 		"email": "jason@company.com",
 		"phone": "555-000-8888",
-		"birthDate": "12-28-1988"
+		"birthDate": "December 28, 1988"
     },
     {
 		"id": 9,
@@ -69,7 +69,7 @@
 		"lastName": "Fry",
 		"email": "nolan@company.com",
 		"phone": "555-000-9999",
-		"birthDate": "09-18-1990"
+		"birthDate": "September 18, 1990"
     },
     {
 		"id": 10,
@@ -77,7 +77,7 @@
 		"lastName": "Weydt",
 		"email": "aj@company.com",
 		"phone": "555-111-1111",
-		"birthDate": "07-12-1989"
+		"birthDate": "July 12, 1989"
     },
     {
 		"id": 11,
@@ -85,7 +85,7 @@
 		"lastName": "Hofmeister",
 		"email": "kelly@company.com",
 		"phone": "555-111-2222",
-		"birthDate": "01-16-1989"
+		"birthDate": "January 16, 1989"
     },
     {
 		"id": 12,
@@ -93,7 +93,7 @@
 		"lastName": "Suchoski",
 		"email": "spencer@company.com",
 		"phone": "555-111-3333",
-		"birthDate": "05-05-1991"
+		"birthDate": "May 5, 1991"
     },
     {
 		"id": 13,
@@ -101,7 +101,7 @@
 		"lastName": "Gabe",
 		"email": "harrison@company.com",
 		"phone": "555-111-4444",
-		"birthDate": "03-04-1990"
+		"birthDate": "March 4, 1990"
     },
     {
 		"id": 14,
@@ -109,7 +109,7 @@
 		"lastName": "Burgess",
 		"email": "erik@company.com",
 		"phone": "555-111-5555",
-		"birthDate": "05-10-1990"
+		"birthDate": "April 10, 1990"
     },
     {
 		"id": 15,
@@ -117,6 +117,6 @@
 		"lastName": "Bohrod",
 		"email": "jake@company.com",
 		"phone": "555-111-6666",
-		"birthDate": "10-05-1989"
+		"birthDate": "October 5, 1989"
 	}
 ]

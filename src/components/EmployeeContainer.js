@@ -13,13 +13,19 @@ class EmployeeContainer extends Component {
   };
 
   componentDidMount() {
-    this.searchEmployee();
+    this.searchEmployeeFirstName();
   }
 
-  searchEmployee = () => {
+  searchEmployeeFirstName = () => {
     const searchQuery = this.state.search.trim();
-    const searchResults = EmployeeList.filter((employee) => employee.firstName === searchQuery);
-    this.setState({ 'result': searchResults });
+    const searchResultsFirstName = EmployeeList.filter((employee) => employee.firstName === searchQuery);
+    this.setState({ 'result': searchResultsFirstName });
+  };
+
+  searchEmployeeBirthDate = () => {
+    const searchQuery = this.state.search.trim();
+    const searchResultsBirthDate = EmployeeList.filter((employee) => employee.birthDate === searchQuery);
+    this.setState({ 'result': searchResultsBirthDate });
   };
 
   handleInputChange = event => {
@@ -30,10 +36,9 @@ class EmployeeContainer extends Component {
     });
   };
 
-  // When the form is submitted, search the OMDB API for the value of `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
-    this.searchEmployee();
+    this.searchEmployeeFirstName();
   };
 
   render() {
@@ -43,7 +48,7 @@ class EmployeeContainer extends Component {
           <Col size="md-4" />
           <Col size="md-4">
             <SearchForm
-              searchtype="firstName"
+              searchtype="First Name"
               value={this.state.search}
               handleInputChange={this.handleInputChange}
               handleFormSubmit={this.handleFormSubmit}
