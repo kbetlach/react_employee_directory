@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/style.css";
 
 function SearchForm(props) {
   return (
@@ -14,18 +15,7 @@ function SearchForm(props) {
             name="search"
             type="text"
             className="form-control"
-            placeholder="Search By Employee First Name"
-            id="search"
-          />
-          <br />
-            <input
-            onChange={props.handleInputChange}
-            value={props.value}
-            searchtype={props.searchtype}
-            name="search"
-            type="text"
-            className="form-control"
-            placeholder="Search By Employee Birth Date"
+            placeholder="Search By First or Last Name, or Birth Date"
             id="search"
           />
           <br />

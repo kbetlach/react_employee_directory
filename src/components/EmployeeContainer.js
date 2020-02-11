@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import Container from "./Container";
 import Row from "./Row";
 import Col from "./Col";
+import Header from "./Header";
 import SearchForm from "./SearchForm";
 import EmployeeInfo from "./EmployeeInfo";
 import EmployeeList from "../data/employees.json";
+import "../styles/style.css";
 
 class EmployeeContainer extends Component {
   state = {
@@ -13,19 +15,13 @@ class EmployeeContainer extends Component {
   };
 
   componentDidMount() {
-    this.searchEmployeeFirstName();
+    this.searchEmployee();
   }
 
-  searchEmployeeFirstName = () => {
+  searchEmployee = () => {
     const searchQuery = this.state.search.trim();
     const searchResultsFirstName = EmployeeList.filter((employee) => employee.firstName === searchQuery);
     this.setState({ 'result': searchResultsFirstName });
-  };
-
-  searchEmployeeBirthDate = () => {
-    const searchQuery = this.state.search.trim();
-    const searchResultsBirthDate = EmployeeList.filter((employee) => employee.birthDate === searchQuery);
-    this.setState({ 'result': searchResultsBirthDate });
   };
 
   handleInputChange = event => {
@@ -38,23 +34,24 @@ class EmployeeContainer extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    this.searchEmployeeFirstName();
+    this.searchEmployee();
   };
 
   render() {
     return (
       <Container>
+        <Header></Header>
         <Row>
-          <Col size="md-4" />
-          <Col size="md-4">
+          <Col size="md-2" />
+          <Col size="md-8">
             <SearchForm
-              searchtype="First Name"
+              searchtype="Employee"
               value={this.state.search}
               handleInputChange={this.handleInputChange}
               handleFormSubmit={this.handleFormSubmit}
             />
           </Col>
-          <Col size="md-4" />
+          <Col size="md-2" />
         </Row>
         <Row>
           <Col size="md-12">
