@@ -7,7 +7,7 @@ function SearchForm(props) {
       <div className="card-body"></div>
       <form>
         <div className="form-group" style={{ padding: '22px' }}>
-          <label htmlFor="search">{props.searchtype} Search</label>
+          <label htmlFor="search">{props.searchtype} Filter</label>
           <input
             onChange={props.handleInputChange}
             value={props.value}
