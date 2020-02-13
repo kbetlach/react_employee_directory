@@ -6,12 +6,16 @@ import Header from "./Header";
 import SearchForm from "./SearchForm";
 import EmployeeInfo from "./EmployeeInfo";
 import EmployeeList from "../data/employees.json";
+import SortOrder from "./SortOrder";
+import SortKey from "./SortKey";
 import "../styles/style.css";
 
 class EmployeeContainer extends Component {
   state = {
     result: [],
-    search: ""
+    search: "",
+    sortKey: "firstName",
+    sortType: 1
   };
 
   componentDidMount() {
@@ -43,8 +47,7 @@ class EmployeeContainer extends Component {
         <Header></Header>
         <br />
         <Row>
-          <Col size="md-2" />
-          <Col size="md-8">
+          <Col size="md-6">
             <SearchForm
               searchtype="Employee"
               value={this.state.search}
@@ -52,12 +55,17 @@ class EmployeeContainer extends Component {
               handleFormSubmit={this.handleFormSubmit}
             />
           </Col>
-          <Col size="md-2" />
+          <Col size="md-3"> 
+            <SortKey handleInputChange={this.handleInputChange} />  
+          </Col>
+          <Col size="md-3"> 
+            <SortOrder handleInputChange={this.handleInputChange} />  
+          </Col>
         </Row>
         <Row>
           <Col size="md-12">
             <hr />
-            <EmployeeInfo search={this.state.search} />
+            <EmployeeInfo search={this.state.search} sortOrder={parseInt(this.state.sortOrder)} sortKey={this.state.sortKey}/>
           </Col>
         </Row>
       </Container >

@@ -4,10 +4,11 @@ import "../styles/style.css";
 function SearchForm(props) {
   return (
     <div className="card text-center">
-      <div className="card-body"></div>
+      <div className="card-header">
+        <h2>Filter</h2>
+      </div>
       <form>
         <div className="form-group" style={{ padding: '22px' }}>
-          <label htmlFor="search">{props.searchtype} Filter</label>
           <input
             onChange={props.handleInputChange}
             value={props.value}
@@ -15,7 +16,7 @@ function SearchForm(props) {
             name="search"
             type="text"
             className="form-control"
-            placeholder="Search By First or Last Name, or Birth Date"
+            placeholder="First or Last Name, Birth Date, Location"
             id="search"
           />
           <br />
